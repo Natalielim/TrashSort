@@ -89,6 +89,17 @@
                                 </state>
                                 <connections>
                                     <action selector="addButtonClick:" destination="BYZ-38-t0r" eventType="touchDown" id="sOu-fu-KAy"/>
+                                    <segue destination="oS4-Ed-3kD" kind="show" id="IU2-uX-nmA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-Uz-7H6">
+                                <rect key="frame" x="229" y="475" width="142" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="View Your Trash Can">
+                                    <color key="titleColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oS4-Ed-3kD" kind="show" id="guT-2k-kKb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,17 +108,22 @@
                             <constraint firstItem="Djn-Y2-9Ym" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="2se-sl-nBD"/>
                             <constraint firstItem="aNY-hS-jSo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4SD-vT-K2g"/>
                             <constraint firstItem="Djn-Y2-9Ym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DV4-0k-eAs"/>
+                            <constraint firstItem="gtK-Uz-7H6" firstAttribute="top" secondItem="aNY-hS-jSo" secondAttribute="bottom" constant="10" id="ESe-h5-ebe"/>
+                            <constraint firstItem="gtK-Uz-7H6" firstAttribute="top" secondItem="aNY-hS-jSo" secondAttribute="bottom" constant="25" id="TwP-4o-r2P"/>
+                            <constraint firstItem="gtK-Uz-7H6" firstAttribute="width" secondItem="aNY-hS-jSo" secondAttribute="width" id="Z8g-M0-Qct"/>
+                            <constraint firstItem="gtK-Uz-7H6" firstAttribute="centerY" secondItem="aNY-hS-jSo" secondAttribute="centerY" id="aSy-L9-C2a"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aNY-hS-jSo" secondAttribute="bottom" constant="150" id="yc2-GS-kxy"/>
+                            <constraint firstItem="gtK-Uz-7H6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z8b-Dt-qTj"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TwP-4o-r2P"/>
+                                <exclude reference="Z8g-M0-Qct"/>
+                                <exclude reference="aSy-L9-C2a"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Trash Sorter" id="jOH-gK-eMw">
-                        <barButtonItem key="rightBarButtonItem" title="Trash Can" style="done" id="aJz-zQ-iNu">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="oS4-Ed-3kD" kind="show" id="OJL-Kh-aJL"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Trash Sorter" id="jOH-gK-eMw"/>
                     <connections>
                         <outlet property="trashnameTextField" destination="6Ey-nl-MKW" id="Vlj-8r-zL8"/>
                         <outlet property="trashtypePicker" destination="M3e-Jk-HeB" id="Mr4-aw-xa7"/>
@@ -169,7 +185,7 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -184,4 +200,7 @@
             <point key="canvasLocation" x="550" y="464"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="guT-2k-kKb"/>
+    </inferredMetricsTieBreakers>
 </document>
