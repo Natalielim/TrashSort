@@ -79,12 +79,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNY-hS-jSo">
                                 <rect key="frame" x="137" y="414" width="325" height="36"/>
                                 <color key="backgroundColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="8i4-cP-dyJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Add to Trash Can">
+                                <state key="normal" title="Add Item">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -92,11 +93,11 @@
                                     <segue destination="oS4-Ed-3kD" kind="show" id="IU2-uX-nmA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-Uz-7H6">
-                                <rect key="frame" x="229" y="475" width="142" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-Uz-7H6">
+                                <rect key="frame" x="229" y="458" width="142" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="View Your Trash Can">
-                                    <color key="titleColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="oS4-Ed-3kD" kind="show" id="guT-2k-kKb"/>
@@ -108,7 +109,7 @@
                             <constraint firstItem="Djn-Y2-9Ym" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="2se-sl-nBD"/>
                             <constraint firstItem="aNY-hS-jSo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4SD-vT-K2g"/>
                             <constraint firstItem="Djn-Y2-9Ym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DV4-0k-eAs"/>
-                            <constraint firstItem="gtK-Uz-7H6" firstAttribute="top" secondItem="aNY-hS-jSo" secondAttribute="bottom" constant="10" id="ESe-h5-ebe"/>
+                            <constraint firstItem="gtK-Uz-7H6" firstAttribute="top" secondItem="aNY-hS-jSo" secondAttribute="bottom" constant="8" id="ESe-h5-ebe"/>
                             <constraint firstItem="gtK-Uz-7H6" firstAttribute="top" secondItem="aNY-hS-jSo" secondAttribute="bottom" constant="25" id="TwP-4o-r2P"/>
                             <constraint firstItem="gtK-Uz-7H6" firstAttribute="width" secondItem="aNY-hS-jSo" secondAttribute="width" id="Z8g-M0-Qct"/>
                             <constraint firstItem="gtK-Uz-7H6" firstAttribute="centerY" secondItem="aNY-hS-jSo" secondAttribute="centerY" id="aSy-L9-C2a"/>
