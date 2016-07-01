@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5la-oM-u6r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Trash Can-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Trash Can" id="BYZ-38-t0r" customClass="ViewController" customModule="TrashSort" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Djn-Y2-9Ym">
+                                <rect key="frame" x="138" y="214" width="325" height="246"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GzM-6n-inh">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trash Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkp-X5-fZb">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="pSr-0O-k8j"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ey-nl-MKW">
+                                                <rect key="frame" x="125" y="0.0" width="200" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="oNG-u8-81A"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="R43-B0-Q8I">
+                                        <rect key="frame" x="0.0" y="30" width="325" height="216"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trash Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssc-2D-9vE">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="215"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="215" id="2SX-c8-mji"/>
+                                                    <constraint firstAttribute="width" constant="125" id="vxk-Ht-pIA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3e-Jk-HeB">
+                                                <rect key="frame" x="125" y="0.0" width="200" height="216"/>
+                                                <color key="tintColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="cfw-VO-h7V"/>
+                                                </constraints>
+                                            </pickerView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ssc-2D-9vE" secondAttribute="bottom" constant="20" symbolic="YES" id="ZBu-4M-AuC"/>
+                                            <constraint firstItem="ssc-2D-9vE" firstAttribute="top" secondItem="R43-B0-Q8I" secondAttribute="top" constant="20" symbolic="YES" id="y8y-SF-VDk"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="ZBu-4M-AuC"/>
+                                                <exclude reference="y8y-SF-VDk"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNY-hS-jSo">
+                                <rect key="frame" x="137" y="414" width="325" height="36"/>
+                                <color key="backgroundColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="8i4-cP-dyJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add to Trash Can">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonClick:" destination="BYZ-38-t0r" eventType="touchDown" id="sOu-fu-KAy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Djn-Y2-9Ym" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="2se-sl-nBD"/>
+                            <constraint firstItem="aNY-hS-jSo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4SD-vT-K2g"/>
+                            <constraint firstItem="Djn-Y2-9Ym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DV4-0k-eAs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aNY-hS-jSo" secondAttribute="bottom" constant="150" id="yc2-GS-kxy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Trash Sorter" id="jOH-gK-eMw">
+                        <barButtonItem key="rightBarButtonItem" title="Trash Can" style="done" id="aJz-zQ-iNu">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="oS4-Ed-3kD" kind="show" id="OJL-Kh-aJL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="trashnameTextField" destination="6Ey-nl-MKW" id="Vlj-8r-zL8"/>
+                        <outlet property="trashtypePicker" destination="M3e-Jk-HeB" id="Mr4-aw-xa7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="464"/>
+        </scene>
+        <!--Trashed Stuff-->
+        <scene sceneID="rzU-AR-aUi">
+            <objects>
+                <tableViewController title="Trashed Stuff" id="oS4-Ed-3kD" customClass="DisplayTrashTableViewController" customModule="TrashSort" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QDY-iC-vEH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" id="ZrW-Ta-2mB">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZrW-Ta-2mB" id="qmT-EU-smy">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="trashCell" id="BpB-vf-Zqg">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BpB-vf-Zqg" id="cxn-KX-cKv">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oS4-Ed-3kD" id="cST-57-eUQ"/>
+                            <outlet property="delegate" destination="oS4-Ed-3kD" id="VoP-QO-yaX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Trash Can" id="zXq-xm-xot"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T6T-XS-s7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1909" y="464"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J66-2g-SGy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5la-oM-u6r" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="z8F-EK-0gE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.45882352939999999" green="0.53725490200000003" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6Oa-EC-tYa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1c-Z7-XMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="464"/>
+        </scene>
+    </scenes>
+</document>
